@@ -1,0 +1,213 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.container .quiz-info {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+}
+.container .quiz-info .category {
+    flex: 1;
+}
+.container .quiz-info .count {
+    flex: 1;
+    text-align: right;
+}
+.container .quiz-area {
+    background-color: #fff;
+    padding: 20px 20px 0;
+    margin-top: 15px;
+}
+.container .quiz-area h2 {
+    margin: 0;
+}
+.container .answer-area {
+    background-color: #fff;
+    padding: 20px;
+}
+.container .answer-area .answer {
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+.container .answer-area .answer:not(:last-child) {
+    margin-bottom: 10px;
+}
+.container .answer-area .answer:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+.container .answer-area .answer input[type='radio']:checked + label {
+    color: #0075ff;
+}
+.answer-area .answer label {
+    color: #777;
+    font-size: 15px;
+    position: relative;
+    top: -1px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.container .submit-buttons {
+    background-color:#0075ff;
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .submit-buttons:hover {
+    background-color: #e74c3c;
+}
+.container .bullets {
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+.container .bullets .spans {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+.container .bullets .spans span {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.container .bullets .spans span.on {
+    background-color: #0075ff;
+}
+.container .results span {
+    font-weight: bold;
+}
+.container .results span.bad {
+    color: #dc0a0a;
+}
+.container .results span.good {
+    color: #009688;
+}
+.container .results span.perfect {
+    color: #0075ff;
+}
+.container .results {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+    font-size: 25px;
+}
+/* start */
+.slider-controls {
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-controls .prev,
+.slider-controls .next {
+    background-color: #009688;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    width: 10%;
+    user-select: none;
+}
+.slider-controls .prev {
+    float: left;
+}
+.slider-controls .next {
+    float: right;
+}
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {
+    background-color: rgba(0, 150, 136, 0.5);
+    /*pointer-events: none;*/
+    /*display: none;*/
+}
+/*.slider-controls .indicators {*/
+    /*width: 60%;*/
+    /*float: left;*/
+/*}*/
+/*.slider-controls .indicators ul {*/
+    /*list-style: none;*/
+    /*text-align: center;*/
+    /*margin: 0;*/
+/*}*/
+/*.slider-controls .indicators ul li {*/
+    /*display: inline-block;*/
+    /*background-color: #F6F6F6;*/
+    /*color: #333;*/
+    /*font-weight: bold;*/
+    /*height: 28px;*/
+    /*width: 28px;*/
+    /*border-radius: 4px;*/
+    /*margin: 0 2px;*/
+    /*line-height: 28px;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.slider-controls .indicators ul li.active {*/
+    /*background-color: #009688;*/
+    /*color: #FFF;*/
+/*}*/
+.slider-controls .spans {
+    width: 80%;
+    float: left;
+}
+.slider-controls .spans span {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+.slider-controls .spans span {
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+}
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
